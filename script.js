@@ -42,9 +42,9 @@ const universeData = (data, dataLimit) => {
             <img src="${singleData.image}" class="card-img-top rounded-3" alt="...">
             <div class="card-body">
                 <h5 class="card-title fw-bolder">Features</h5>
-                <p class="card-text p-0 m-0">1.${singleData.features[0]}</p>
-                <p class="card-text p-0 m-0">2.${singleData.features[1]}</p>
-                <p class="card-text p-0 m-0">3.${singleData.features[2]}</p>
+                <p class="card-text p-0 m-0">1. ${singleData.features[0]}</p>
+                <p class="card-text p-0 m-0">2. ${singleData.features[1]}</p>
+                <p class="card-text p-0 m-0">3. ${singleData.features[2]}</p>
             </div>
             <hr>
             <div class="footer pb-3 px-3 d-flex justify-content-between align-items-center">
