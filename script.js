@@ -115,7 +115,7 @@ const modalDetails = (data) => {
 <div class="col rounded-3">
   <div class="card position-relative">
     <img src="${data.image_link[0]}" class="card-img-top" alt="...">
-    <button class="btn btn-danger position-absolute top-0 end-0"" weight="100px">${data.accuracy ? data.accuracy.score : "No accuracy"}%accuracy</button>
+    <button class="btn btn-danger position-absolute top-0 end-0"" weight="100px">${data.accuracy ? data.accuracy.score : "No accuracy"}% accuracy</button>
     <p ></p>
     <div class="card-body text-center">
       <h5 class="card-title">${data.input_output_examples[0].input}</h5>
