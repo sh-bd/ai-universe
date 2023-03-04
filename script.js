@@ -79,12 +79,12 @@ const modalDetails = (data) => {
 </div>
 <div class="modal-body ">
 <div class="row row-cols-1 row-cols-md-2 g-4">
-<div class="col bg-danger-subtle rounded-3">
+<div class="col bg-danger-subtle px-4 rounded-3">
   <div class="">
     <div class="card-body">
         <h5 class="card-title fs-3 text mt-5">${data.description ? data.description : 'Did not found any description'}</h5>
         <p class="card-text"></p>
-        <div class="row d-flex justify-content-between py-3 mx-2 mb-3 gap-3">
+        <div class="row d-flex justify-content-between py-3 mx-1 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
                 <p class="text-center text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
             </div>
@@ -126,7 +126,7 @@ const modalDetails = (data) => {
 </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
 </div>
     `;
     modal.appendChild(modalDiv);
