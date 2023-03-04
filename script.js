@@ -41,7 +41,7 @@ const universeData = (data, dataLimit) => {
         <div class="card h-100 pt-3 px-3">
             <img src="${singleData.image}" class="card-img-top rounded-3" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Features</h5>
+                <h5 class="card-title fw-bolder">Features</h5>
                 <p class="card-text p-0 m-0">1.${singleData.features[0]}</p>
                 <p class="card-text p-0 m-0">2.${singleData.features[1]}</p>
                 <p class="card-text p-0 m-0">3.${singleData.features[2]}</p>
@@ -49,7 +49,7 @@ const universeData = (data, dataLimit) => {
             <hr>
             <div class="footer pb-3 px-3 d-flex justify-content-between align-items-center">
                 <div>
-                    <p class="p-0 m-0">${singleData.name}</p>
+                    <p class="p-0 m-0 fw-bolder pb-2">${singleData.name}</p>
                     <div class="d-flex align-items-center gap-2">
                         <i class="fa-solid fa-calendar-days"></i>
                         <p class="p-0 m-0">${singleData.published_in}</p>
@@ -82,22 +82,22 @@ const modalDetails = (data) => {
 <div class="col bg-danger-subtle px-4 rounded-3">
   <div class="">
     <div class="card-body">
-        <h5 class="card-title fs-3 text mt-4">${data.description ? data.description : 'Did not found any description'}</h5>
+        <h5 class="card-title fw-bolder fs-3 text mt-4">${data.description ? data.description : 'Did not found any description'}</h5>
         <p class="card-text"></p>
         <div class="row d-flex justify-content-between py-3 mx-1 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
+                <p class="text-center fw-bolder text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
             </div>
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center text-primary">${data.pricing ? data.pricing[1].price + ' <br>' + data.pricing[1].plan : 'Free Of Cost/Pro'}</p>
+                <p class="text-center fw-bolder text-primary">${data.pricing ? data.pricing[1].price + ' <br>' + data.pricing[1].plan : 'Free Of Cost/Pro'}</p>
             </div>
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center text-info">${data.pricing ? data.pricing[2].price + ' <br>' + data.pricing[2].plan : 'Free of Cost /Enterprise'}</p>
+                <p class="text-center fw-bolder text-info">${data.pricing ? data.pricing[2].price + ' <br>' + data.pricing[2].plan : 'Free of Cost /Enterprise'}</p>
             </div>
         </div>        
         <div class="row d-flex justify-content-between pb-4 gap-3">
             <div class="col ">
-                <h3>Features</h3>
+                <h3 class="fw-bolder">Features</h3>
                 <p class="m-0 p-0">${data.features ? data.features[1].feature_name : 'No features found'}</p>
                 <p class="m-0 p-0">${data.features ? data.features[2].feature_name : 'No features found'}</p>
                 <p class="m-0 p-0">${data.features ? data.features[3].feature_name : 'No features found'}</p>
