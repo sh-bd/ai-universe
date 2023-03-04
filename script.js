@@ -103,7 +103,7 @@ const modalDetails = (data) => {
                 <p class="m-0 p-0">${data.features ? data.features[3].feature_name : 'No features found'}</p>
             </div>
             <div class="col">
-                <h3>Integrations</h3>
+                <h3 class="fw-bolder">Integrations</h3>
                 <p class="m-0 p-0">${data.integrations ? data.integrations[0] : 'No data Found'}</p>
                 <p class="m-0 p-0">${data.integrations ? data.integrations[1] : 'No data Found'}</p>
                 <p class="m-0 p-0">${data.integrations ? data.integrations[2] : 'No data Found'}</p>
