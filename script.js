@@ -18,7 +18,7 @@ const universeData = (data, dataLimit) => {
         showMore.classList.add('d-none');
     }
     data.forEach(singleData => {
-        console.log(singleData);
+        // console.log(singleData);
         document.getElementById('sort-by-date').addEventListener('click', function () {
             const date = singleData.published_in.sort(function sort(a, b) {
                 const dateA = new Date(a.singleData.published_in);
@@ -33,7 +33,7 @@ const universeData = (data, dataLimit) => {
                     return 0
                 }
             });
-            console.log(date);
+            // console.log(date);
         })
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('col');
