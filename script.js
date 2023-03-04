@@ -82,7 +82,7 @@ const modalDetails = (data) => {
 <div class="col bg-danger-subtle px-4 rounded-3">
   <div class="">
     <div class="card-body">
-        <h5 class="card-title fs-3 text mt-5">${data.description ? data.description : 'Did not found any description'}</h5>
+        <h5 class="card-title fs-3 text mt-4">${data.description ? data.description : 'Did not found any description'}</h5>
         <p class="card-text"></p>
         <div class="row d-flex justify-content-between py-3 mx-1 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
