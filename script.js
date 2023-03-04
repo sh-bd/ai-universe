@@ -3,8 +3,6 @@ const allData = (dataLimit) => {
         .then(res => res.json())
         .then(data => universeData(data.data.tools, dataLimit))
 }
-
-
 const universeData = (data, dataLimit) => {
     toggleLoader(true);
     const cardContainer = document.getElementById('card-container');
@@ -19,7 +17,6 @@ const universeData = (data, dataLimit) => {
     else {
         showMore.classList.add('d-none');
     }
-
     data.forEach(singleData => {
         console.log(singleData);
         document.getElementById('sort-by-date').addEventListener('click', function () {
@@ -38,7 +35,6 @@ const universeData = (data, dataLimit) => {
             });
             console.log(date);
         })
-
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('col');
         cardDiv.innerHTML = `
@@ -67,7 +63,6 @@ const universeData = (data, dataLimit) => {
         toggleLoader(false)
     })
 }
-
 const modalFetch = (id) => {
     fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)
         .then(res => res.json())
@@ -78,10 +73,8 @@ const modalDetails = (data) => {
     modal.innerHTML = "";
     const modalDiv = document.createElement('div');
     modal.classList.add('modal-content');
-    modalDiv.innerHTML = `
-        
-    <div class="modal-header ">
-        
+    modalDiv.innerHTML = `        
+    <div class="modal-header ">        
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body ">
@@ -89,9 +82,9 @@ const modalDetails = (data) => {
 <div class="col bg-danger-subtle rounded-3">
   <div class="">
     <div class="card-body">
-        <h5 class="card-title">${data.description ? data.description : 'Did not found any description'}</h5>
+        <h5 class="card-title fs-3 text mt-5">${data.description ? data.description : 'Did not found any description'}</h5>
         <p class="card-text"></p>
-        <div class="row d-flex justify-content-between mx-2 mb-3 gap-3">
+        <div class="row d-flex justify-content-between py-3 mx-2 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
                 <p class="text-center text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
             </div>
@@ -101,9 +94,8 @@ const modalDetails = (data) => {
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
                 <p class="text-center text-info">${data.pricing ? data.pricing[2].price + ' <br>' + data.pricing[2].plan : 'Free of Cost /Enterprise'}</p>
             </div>
-        </div>
-        
-        <div class="row d-flex justify-content-between gap-3">
+        </div>        
+        <div class="row d-flex justify-content-between pb-4 gap-3">
             <div class="col ">
                 <h3>Features</h3>
                 <p class="m-0 p-0">${data.features ? data.features[1].feature_name : 'No features found'}</p>
@@ -131,7 +123,6 @@ const modalDetails = (data) => {
     </div>
   </div>
 </div>
-
 </div>
 </div>
 <div class="modal-footer">
@@ -144,7 +135,6 @@ document.getElementById('see-more').addEventListener('click', function () {
 
     allData();
 })
-
 const loader = document.getElementById('loader');
 const toggleLoader = (isLoading) => {
     if (isLoading) {

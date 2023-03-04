@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"">
+<html lang="en">
 
 <head>
     <meta charset=" UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Universe Hub</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-
 
 <body onload="allData(6)">
     <!-- heading of the site -->
@@ -18,17 +16,12 @@
         <h1 class="text-4xl text-center font-semibold">AI Universe Hub</h1>
     </header>
     <main>
-
-
         <!-- sorting btn ok -->
         <div class="d-flex justify-content-center m-4">
             <button id="sort-by-date" class="btn btn-danger p-3 fw-semibold">Sort by Date</button>
         </div>
-
-
         <!-- main section starts here -->
         <section class="mx-5">
-
             <!-- card section starts -->
             <div class="container">
                 <div>
@@ -37,42 +30,30 @@
                     </div>
                 </div>
             </div>
-
-
-
-
             <!-- see more btn  ok -->
             <div class="d-flex justify-content-center mt-5">
                 <button class="btn btn-danger px-4 p-3 fw-semibold" id="see-more">See More</button>
             </div>
-
-
             <!-- modal section  -->
             <div class="modal container-fluid " tabindex="-1" id="card-Modal" tabindex="-1"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog ">
                 </div>
                 <div class="modal-content container" id="modal">
-
                 </div>
             </div>
-
-
             <!-- loader -->
             <div class="d-flex justify-content-center align-items-center" style="margin-top: 150px;">
-
                 <div class="spinner-grow text-warning spinner " id="loader" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-
         </section>
-
     </main>
-
     <!-- footer section starts here  -->
     <footer class="p-2 bg-secondary text-center text-light">
-        Developed by <a href="https://github.com/sh-bd/" target="_blank" style="text-decoration: none;" class="text-info fw-semibold">Shamim</a>.
+        Developed by <a href="https://github.com/sh-bd/" target="_blank" style="text-decoration: none;"
+            class="text-info fw-semibold">Shamim</a>.
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
