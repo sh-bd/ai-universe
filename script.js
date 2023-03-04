@@ -86,12 +86,12 @@ const modalDetails = (data) => {
 </div>
 <div class="modal-body ">
 <div class="row row-cols-1 row-cols-md-2 g-4">
-<div class="col bg-warning rounded-3">
+<div class="col bg-danger-subtle rounded-3">
   <div class="">
     <div class="card-body">
         <h5 class="card-title">${data.description ? data.description : 'Did not found any description'}</h5>
         <p class="card-text"></p>
-        <div class="row d-flex justify-content-between mb-3 gap-3 ">
+        <div class="row d-flex justify-content-between mx-2 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
                 <p class="text-center text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
             </div>
