@@ -86,13 +86,13 @@ const modalDetails = (data) => {
         <p class="card-text"></p>
         <div class="row d-flex justify-content-between py-3 mx-1 mb-3 gap-3">
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center fw-bolder text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
+                <p class="text-center fw-semibold text-success">${data.pricing ? data.pricing[0].price + ' <br>' + data.pricing[0].plan : 'Free of Cost/Basic'}</p>
             </div>
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center fw-bolder text-primary">${data.pricing ? data.pricing[1].price + ' <br>' + data.pricing[1].plan : 'Free Of Cost/Pro'}</p>
+                <p class="text-center fw-semibold text-primary">${data.pricing ? data.pricing[1].price + ' <br>' + data.pricing[1].plan : 'Free Of Cost/Pro'}</p>
             </div>
             <div class="col bg-light rounded-3 pt-3 d-flex align-items-center justify-content-center">
-                <p class="text-center fw-bolder text-info">${data.pricing ? data.pricing[2].price + ' <br>' + data.pricing[2].plan : 'Free of Cost /Enterprise'}</p>
+                <p class="text-center fw-semibold text-info">${data.pricing ? data.pricing[2].price + ' <br>' + data.pricing[2].plan : 'Free of Cost /Enterprise'}</p>
             </div>
         </div>        
         <div class="row d-flex justify-content-between pb-4 gap-3">
